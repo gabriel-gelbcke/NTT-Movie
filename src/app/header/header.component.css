@@ -2,18 +2,31 @@
 --bs-navbar-brand-hover-color: white;
 }
 
-/* .navbar-brand {
-    margin-right: 0;
-    margin-left: 0;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
-} */
 
-.imgLogo{
-    height: 1.5vw;
+
+@media screen and (max-width: 800px){        
+    span{
+        transition: 0.3s;
+        display: none;
+    }
+
+    nav{
+        height: 10vw;
+    }
+
+    img{
+        height: 5vw;
+    }
+}
+
+@media screen and (min-width: 800px){ 
+    img{
+        height: 1.5vw;
+    }
 }
 
 span{
+    transition: 0.3;
     margin-left: 13px;
     padding-bottom: 8px;
     font-size: 22px;
@@ -28,17 +41,20 @@ span{
     align-items: center;
     justify-content: center;
     margin-top: 4vh;
+
     /* position: fixed; */
 }
 
 nav{
-    width: 60%;
+    width: 100%;
     border-radius: 1vh;
     box-shadow: 4px 4px 8px 1px rgb(0 0 0 / 0.3);
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: white;
+    margin-left: 8vh;
+    margin-right: 8vh;
 }
 
 .bg-dark {
