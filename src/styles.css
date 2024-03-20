@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Ember Display';
+    src: url('assets/Fonts/EmberDs/AmazonEmberDisplay_Bd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+    font-family: 'Ember Display';
+}
+
+html{
+    user-select: none;
+    font-family: 'Ember Display';
+}

@@ -1,0 +1,60 @@
+<section class="fundo-pesquisa">
+    <h1>Pesquisar</h1>
+    <div class="pesquisa">
+        <form class="form-pesquisa">
+            <div class="mb-3">
+              <!-- <label for="exampleInputEmail1" class="form-label"><h2>Insira o nome do filme</h2></label> -->
+              <input style="height: 5vh;" placeholder="Busca" type="text" class="form-control" id="exampleInputEmail1">
+            </div>
+            <button style="width: 15vh;" type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
+
+
+    </div>
+</section>
+
+<section class="fundo-filmes">
+    <h1>Filmes</h1>
+    <div class="filmes"  style="    position: relative; /* added */
+    width: 100%; /* added */">
+
+
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div *ngFor="let card of movies" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card" >
+                        <img  src="{{card.Poster}}" class="card-img-top" alt="...">
+                        <div class="card-body" >
+                          <h5 class="card-title">{{card.Title}}</h5>
+                          <p class="card-text">{{card.Plot}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{card.Released}}</li>
+                          <li class="list-group-item">{{card.Genre}}</li>
+                          <li class="list-group-item">{{card.Awards}}</li>
+                        </ul>
+                      </div>
+                  </div>      
+          </div>
+
+
+
+
+
+
+
+          <!-- <div class="card" style="width: 20rem;">
+            <img height="200px" src="assets/Imagens/ImgTest.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Título</h5>
+              <p class="card-text">Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Action Adventure Sci-Fi</li>
+              <li class="list-group-item">PG-13</li>
+              <li class="list-group-item">Internet Movie Database - 7.4/10</li>
+            </ul>
+          </div> -->
+
+    </div>
+</section>
