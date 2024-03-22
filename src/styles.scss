@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Ember Display2';
+    src: url('assets/Fonts/EmberDs/AmazonEmberDisplay_Md.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color: black;
     font-family: 'Ember Display';
@@ -13,4 +20,9 @@ body{
 html{
     user-select: none;
     font-family: 'Ember Display';
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
 }

@@ -1,0 +1,27 @@
+<section class="fundo-filmes">
+    <h1>Filmes</h1>
+    <div class="filmes" style="position: relative; width: 100%;">
+            <div *ngIf="movie$ | async as movies" class="row">
+                <div *ngFor="let movie of movies" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="card" >
+                        <img  src="{{movie.Poster}}" class="card-img-top" alt="...">
+                        <div class="card-body" >
+                          <h5 class="card-title">
+                            {{movie.Title}}
+                            <span class="badge bg-primary">{{ movie.Type | uppercase}}</span>
+                          </h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">		<p class="card-text">
+                            {{ movie.Title }} is a {{ movie.Type }} that was released in {{ movie.Year }}
+                          </p></li>
+                          <!-- <li class="list-group-item">{{movie.Genre}}</li> -->
+                          <li class="list-group-item">
+                            <a routerLink="/about" routerLinkActive="active">About</a>
+                        </li>
+                        </ul>
+                      </div>
+                  </div>      
+              </div>
+          </div>
+  </section>
